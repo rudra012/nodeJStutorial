@@ -1,6 +1,8 @@
+Source: http://www.tutorialspoint.com/nodejs/
+
 Node JS tutorial for beginners:
 
-This repo contains basic examples for node JS as I started to learn node JS from today.
+This repo contains basic examples for node JS as I started to learn node JS from today from above link.
 
 --------------------------------------------------------------------------------------------
 
@@ -110,6 +112,19 @@ $ npm publish
 
 If everything is fine with your module, then it will be published in the reporsitory and
 will be accessible to install using npm like any other other Node.js module.
+--------------------------------------------------------------------------------------------
+
+Chapter-5: Callbacks Concept:
+
+Callback is nothing just to tell nodeJS that please keep continue execution if blocking task come and
+when blocking task will done call that function back.
+
+Example are in js/Callbackdemo directory
+
+$ node js/Callbackdemo/blockingRead.js
+
+$ node js/Callbackdemo/asyncRead.js
+
 --------------------------------------------------------------------------------------------
 
 Author:
