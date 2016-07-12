@@ -2,6 +2,8 @@ Node JS tutorial for beginners:
 
 This repo contains basic examples for node JS as I started to learn node JS from today.
 
+--------------------------------------------------------------------------------------------
+
 Chapter-1: Print Hello Word
 
 Installation on UNIX/Linux/Mac OS X, and SunOS:
@@ -12,10 +14,106 @@ To run any js file:
 
 $ node js/hello.js
 
+--------------------------------------------------------------------------------------------
 
 Chapter-2: basicHTTPserver:
 
+--------------------------------------------------------------------------------------------
+
+Chapter-3: REPL Terminal:
+
+REPL stands for Read Eval Print Loop
+
+Starting REPL
+
+$ node
+> 1 + 3
+4
+
+You can use underscore _ to get the last result:
+
+> var a = 1
+undefined
+> b = 4
+4
+> a+b
+5
+> var sum = _
+undefined
+> console.log(sum);sum;
+5
+5
+>
+
+--------------------------------------------------------------------------------------------
+
+Chapter-4: npm:
+
+Node Package Manager (npm)
+
+$ npm --version
+3.10.5
+
+* To update it to the latest version
+$ sudo npm install npm -g
+
+Installing Modules using npm
+$ npm install <Module Name>
+
+eg:
+$ npm install express
+var express = require('express');
 
 
- Shailesh Rudra
- Ahmedabad, Gujarat
+--> You can use following command to check all the modules installed globally:
+Here we can find Package.json file path:
+$ npm ls -g
+$ npm ls
+
+Attributes of Package.json
+
+    name - name of the package
+
+    version - version of the package
+
+    description - description of the package
+
+    homepage - homepage of the package
+
+    author - author of the package
+
+    contributors - name of the contributors to the package
+
+    dependencies - list of dependencies. npm automatically installs all the dependencies mentioned
+                    here in the node_module folder of the package.
+
+    repository - repository type and url of the package
+
+    main - entry point of the package
+
+    keywords - keywords
+
+* Updating a module
+$ npm update express
+
+* Search a module
+$ npm search express
+
+* Uninstalling a module
+$ npm uninstall express
+
+* Create a module
+$ npm init
+$ npm adduser
+To publish module:
+$ npm publish
+
+If everything is fine with your module, then it will be published in the reporsitory and
+will be accessible to install using npm like any other other Node.js module.
+--------------------------------------------------------------------------------------------
+
+Author:
+Shailesh Rudra
+Ahmedabad, Gujarat
+
+email : rudra12shailesh@gmail.com
