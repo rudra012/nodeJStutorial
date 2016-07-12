@@ -127,6 +127,31 @@ $ node js/Callbackdemo/asyncRead.js
 
 --------------------------------------------------------------------------------------------
 
+Chapter-6: Events Loop:
+
+This is same concepts as async calls.
+The functions which listens to events acts as Observers.
+Whenever an event gets fired, its listener function starts executing.
+
+Steps:  Import - Create - Bind - Fire
+
+// Import events module
+var events = require('events');
+
+// Create an eventEmitter object
+var eventEmitter = new events.EventEmitter();
+
+// Bind event and even handler as follows
+eventEmitter.on('eventName', eventHandler);
+
+// Fire an event
+eventEmitter.emit('eventName');
+
+Execute Events Example:
+$ node js/eventLoop.js
+
+--------------------------------------------------------------------------------------------
+
 Author:
 Shailesh Rudra
 Ahmedabad, Gujarat
