@@ -152,6 +152,23 @@ $ node js/eventLoop.js
 
 --------------------------------------------------------------------------------------------
 
+Chapter-7: Event Emitter:
+
+EventEmitter provides multiple properties like on and emit.
+on property is used to bind a function with the event and
+emit is used to fire an event.
+
+This is same as publish and subscribe feature.
+
+If listener is bind to and event means is subscribed that event.
+It will get execute on respective event emit.
+Here execution of events based on bind sequence.
+
+For example:
+$ node js/basicEventEmmiter.js
+
+--------------------------------------------------------------------------------------------
+
 Author:
 Shailesh Rudra
 Ahmedabad, Gujarat
