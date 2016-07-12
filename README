@@ -2,13 +2,20 @@ Node JS tutorial for beginners:
 
 This repo contains basic examples for node JS as I started to learn node JS from today.
 
+Chapter-1: Print Hello Word
+
 Installation on UNIX/Linux/Mac OS X, and SunOS:
 
 $ sudo apt-get install nodejs
 
 To run any js file:
 
-$ node any-file.js
+$ node js/hello.js
+
+
+Chapter-2: basicHTTPserver:
+
+
 
  Shailesh Rudra
  Ahmedabad, Gujarat
